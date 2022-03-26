@@ -22,8 +22,8 @@
 
     <style>
         body {
-            padding-left: 40px;
-            padding-right: 40px;
+            /* padding-left: 40px;
+            padding-right: 40px; */
             font-family: 'Poppins', sans-serif;
         }
 
@@ -63,6 +63,7 @@
         table {
             margin-bottom: 40px;
             margin-top: 20px;
+            width: 100%;
         }
 
         #academic {
@@ -113,6 +114,7 @@
         .top-section {
             display: flex;
             justify-content: center;
+            width: 100%;
         }
 
         .heading {
@@ -123,6 +125,53 @@
         .name {
             color: rgb(75, 191, 230);
             font-weight: 500;
+        }
+        #download{
+            
+            background-color: navy;
+            color: white;
+            font-size: 1.1em;
+            border-radius: 10px;
+            padding: 10px 20px;
+        }
+        @media only screen and (max-width:600px){
+            table{
+                display:none;
+            }
+            #img-pp{
+                display: none;
+            }
+            .logo{
+                padding-left: 0;
+            }
+            #contact-info{
+                padding-right: 0;
+                border: 0;
+            }
+            
+            .cont{
+                flex-direction: column;
+            }
+            .top-section{
+                text-align: center;
+                width: 80%;
+                margin-left: auto;
+            }
+            #phone-img{
+                margin-top: 10px;
+            }
+            #phone-img img{
+                display: block !important;
+            }
+            /* #academic{
+                display: none !important;
+            } */
+            #skill-div{
+                padding-top: 25px;
+            }
+            #rotate{
+                display: block !important ;
+            }
         }
     </style>
 </head>
@@ -169,7 +218,11 @@
             </div>
         </div>
     </nav>
+    <div id="phone-img" class="d-flex justify-content-center">
+        <img  src="./img/passport.jpeg" style="display: none;" alt="">
+    </div>
     <div class="top-section">
+        
         <div>
             <p class="heading" style="margin-bottom: 0;">
                 CURRICULUM VITAE of <br>
@@ -182,148 +235,170 @@
             </p>
         </div>
         <div style="margin-left: 100px;" class="d-flex align-items-center">
-            <img src="./img/passport.jpeg" alt="">
+            <img id="img-pp" src="./img/passport.jpeg" alt="">
         </div>
 
     </div>
 
-    <div class="cont">
-        <div class="ddd" id="contact-info">
-            <h1 class="navy">Contact Info</h1>
-        </div>
-        <div class="logo tfont">
+    <div class="ps-5 pe-5">
 
-            <div>
-                <i class="lni lni-phone"></i> 01621179340
-                <br>
-                <i class="lni lni-envelope"></i> banindya99@gmail.com <br>
-                <i class="lni lni-money-location"></i> Dhaka/Uttara sector11,Road 10B, House no 2 <br>
-                <i class="lni lni-facebook"></i> <a href="https://www.facebook.com/anindya.baul.Mrinmoy">Get in
-                    Touch</a>
+        <div class="cont" style="width: 100%;">
+            <div class="ddd" id="contact-info">
+                <h1 class="navy">Contact Info</h1>
+            </div>
+            <div class="logo tfont">
+    
+                <div>
+                    <i class="lni lni-phone"></i> 01621179340
+                    <br>
+                    <i class="lni lni-envelope"></i> banindya99@gmail.com <br>
+                    <i class="lni lni-money-location"></i> Dhaka/Uttara sector11,Road 10B, House no 2 <br>
+                    <i class="lni lni-facebook"></i> <a href="https://www.facebook.com/anindya.baul.Mrinmoy">Get in
+                        Touch</a>
+                </div>
             </div>
         </div>
-    </div>
+        
     
+        <div id="career">
+            <h1 class="navy">Career Qualifiacation
+    
+            </h1><br>
+    
+            <p class="tfont
+                    ">To obtain a position with opportunities to utilize my potentiality,adaptability & skill to do some
+                thing innovative and from where I will be able to anhance my Knowledge. </p>
+        </div>
+    
+    
+    
+    
+        <h1 class="navy" id="academic">Academic Qualifiacation</h1>
+        <div id="rotate" style="display: none;" class="text-center">
+            <p class="pt-3"  >Rotate phone to view Academic Qualification</p>
+            <img src="./img/rotate-smartphone.png" style="height: 30px;" alt="">
 
-    <div id="career">
-        <h1 class="navy">Career Qualifiacation
+        </div>
 
-        </h1><br>
+        <table class="tfont">
+            <th>
+                Exam Name
+            </th>
+            <th>
+                Institute name
+            </th>
+            <th>
+                Department
+            </th>
+            <th>
+                Passing year
+            </th>
+            <th>
+                Result
+            </th>
+            <tr class="chai">
+                <td>CAAB & Diploma in Engineering</td>
+                <td class="daag">
+                    Aeronautical institute of bangldesh
+                </td>
+                <td>
+                    aerospace maintainance engineering
+                </td>
+                <td>
+                    2017
+                </td>
+                <td>
+                    Ongoing
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    H.S.C
+                </td>
+                <td class="daag">
+                    Shatirpara KK Institute School & College
+                </td>
+                <td>
+                    science
+                </td>
+                <td>
+                    2016
+                </td>
+                <td>
+                    4.50 out of 5
+                </td>
+            </tr>
+            <tr class="chai">
+                <td>S.S.C</td>
+                <td class="daag">
+                    U.M.C Adarsha Bidhalaya Narsingdi
+                </td>
+                <td>
+                    Science
+                </td>
+                <td>
+                    2014
+                </td>
+                <td>
+                    4.38 out of 5
+                </td>
+            </tr>
+        </table>
+    
+        <div id="skill-div" style="width: 100%;">
+            <h1 id="skills" class="navy">Skills</h1>
+        <ol class="tfont" type="a">
+            <li>Microsoft Excell</li>
+            <li>Microsoft Word</li>
+            <li>Powerpoint</li>
+            <li>Adobe Photoshop & Illustrutor</li>
+            <li>Other Basic Knowledge</li>
+        </ol>
+        </div>
+    
+        <div style="width: 100%;">
+            <h1 id="lang" class="navy">Language Skills</h1>
+        <ol class="tfont" type="a">
+            <li>English - Professional Working Proficiency</li>
+            <li>Bangla - Mother Tongue</li>
+        </ol>
+        </div>
+    
+        <div style="width: 100%;">
+            <h1 id="course" class="navy">Course</h1>
+        <ol class="tfont" type="a">
+            <li>Course in English</li>
+            <li>Participation on Adobe Photoshop & Adobe Illustrutor</li>
+        </ol>
+        </div>
+    
+        <div style="width: 100%;">
+            <h1 id="PD" class="navy">Personal Details</h1>
+        <ul class="tfont" type="a">
+            <li>Date of Birth : July 23, 1998</li>
+            <li>Nationality : Bangladeshi</li>
+            <li>NID : 5105191505</li>
+            <li>Blood Group : B+</li>
+            <li>Religion : Hindu</li>
+            <li>Parmanent Address : 27/3 Brahmanpara, Narsingdi
+            </li>
+        </ul>
+        </div>
+    
+        <div style="width: 100%;">
+            <h1 id="RF" class="navy">Reference</h1>
+        <p class="tfont"><span class="special">Engr. S.M.Akmal Hossain</span> <br> Principal <br>Aeronautical Institute of
+            Bangladesh <br><span class="special">cell :</span> 01742395177</p>
+        </div>
 
-        <p class="tfont
-                ">To obtain a position with opportunities to utilize my potentiality,adaptability & skill to do some
-            thing innovative and from where I will be able to anhance my Knowledge. </p>
+        <div style="margin-top: 40px;">
+            <button id="download">Download CV</button>
+        </div>
     </div>
 
 
 
-
-    <h1 class="navy" id="academic">Academic Qualifiacation</h1>
-
-    <table class="tfont">
-        <th>
-            Exam Name
-        </th>
-        <th>
-            Institute name
-        </th>
-        <th>
-            Department
-        </th>
-        <th>
-            Passing year
-        </th>
-        <th>
-            Result
-        </th>
-        <tr class="chai">
-            <td>CAAB & Diploma in Engineering</td>
-            <td class="daag">
-                Aeronautical institute of bangldesh
-            </td>
-            <td>
-                aerospace maintainance engineering
-            </td>
-            <td>
-                2017
-            </td>
-            <td>
-                Ongoing
-            </td>
-        </tr>
-        <tr>
-            <td>
-                H.S.C
-            </td>
-            <td class="daag">
-                Shatirpara KK Institute School & College
-            </td>
-            <td>
-                science
-            </td>
-            <td>
-                2016
-            </td>
-            <td>
-                4.50 out of 5
-            </td>
-        </tr>
-        <tr class="chai">
-            <td>S.S.C</td>
-            <td class="daag">
-                U.M.C Adarsha Bidhalaya Narsingdi
-            </td>
-            <td>
-                Science
-            </td>
-            <td>
-                2014
-            </td>
-            <td>
-                4.38 out of 5
-            </td>
-        </tr>
-    </table>
-
-    <h1 id="skills" class="navy">Skills</h1>
-    <ol class="tfont" type="a">
-        <li>Microsoft Excell</li>
-        <li>Microsoft Word</li>
-        <li>Powerpoint</li>
-        <li>Adobe Photoshop & Illustrutor</li>
-        <li>Other Basic Knowledge</li>
-    </ol>
-
-    <h1 id="lang" class="navy">Language Skills</h1>
-    <ol class="tfont" type="a">
-        <li>English - Professional Working Proficiency</li>
-        <li>Bangla - Mother Tongue</li>
-    </ol>
-
-    <h1 id="course" class="navy">Course</h1>
-    <ol class="tfont" type="a">
-        <li>Course in English</li>
-        <li>Participation on Adobe Photoshop & Adobe Illustrutor</li>
-    </ol>
-
-    <h1 id="PD" class="navy">Personal Details</h1>
-    <ul class="tfont" type="a">
-        <li>Date of Birth : July 23, 1998</li>
-        <li>Nationality : Bangladeshi</li>
-        <li>NID : 5105191505</li>
-        <li>Blood Group : B+</li>
-        <li>Religion : Hindu</li>
-        <li>Parmanent Address : 27/3 Brahmanpara, Narsingdi
-        </li>
-    </ul>
-
-    <h1 id="RF" class="navy">Reference</h1>
-    <p class="tfont"><span class="special">Engr. S.M.Akmal Hossain</span> <br> Principal <br>Aeronautical Institute of
-        Bangladesh <br><span class="special">cell :</span> 01742395177</p>
-
-
-
-    </div>
+    
 
     <footer class=" py-5" style="background-color: aliceblue; margin-top: 100px;">
         <p class="text-center" style="font-weight: 100;opacity: 70%;">&copy Rahul's Den || 2022 </p>
@@ -331,6 +406,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+        <script src="./js/app.js"></script>
 
 </body>
 
