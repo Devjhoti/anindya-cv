@@ -21,6 +21,21 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <style>
+        @keyframes bounce {
+            0% {
+                transform: scale(1);
+            }
+
+            
+
+            100% {
+                transform: scale(1.2) translateX(10px);
+                color: navy;
+                
+                
+            }
+        }
+
         body {
             /* padding-left: 40px;
             padding-right: 40px; */
@@ -43,9 +58,11 @@
             padding: 10px;
             text-align: center;
         }
-        th{
+
+        th {
             text-align: center;
         }
+
         .chai {
             background-color: rgba(128, 128, 128, 0.233);
         }
@@ -125,54 +142,76 @@
         .name {
             color: rgb(75, 191, 230);
             font-weight: 500;
+            line-height: 60px;
+
         }
-        #download{
-            
+
+        #download {
+
             background-color: navy;
             color: white;
             font-size: 1.1em;
             border-radius: 10px;
             padding: 10px 20px;
         }
-        @media only screen and (max-width:600px){
-            table{
-                display:none;
-            }
-            #img-pp{
+
+        @media only screen and (max-width:600px) {
+            table {
                 display: none;
             }
-            .logo{
+
+            #img-pp {
+                display: none;
+            }
+
+            .logo {
                 padding-left: 0;
             }
-            #contact-info{
+
+            #contact-info {
                 padding-right: 0;
                 border: 0;
             }
-            
-            .cont{
+
+            .cont {
                 flex-direction: column;
             }
-            .top-section{
+
+            .top-section {
                 text-align: center;
                 width: 80%;
                 margin-left: auto;
             }
-            #phone-img{
+
+            #phone-img {
                 margin-top: 10px;
-                
+
             }
-            #phone-img img{
+
+            #phone-img img {
                 display: block !important;
                 border-radius: 50%;
             }
+
             /* #academic{
                 display: none !important;
             } */
-            #skill-div{
+            #skill-div {
                 padding-top: 25px;
             }
-            #rotate{
-                display: block !important ;
+
+            #rotate {
+                display: block !important;
+            }
+
+            .name {
+                display: block;
+                animation-name: bounce;
+                animation-duration: 2000ms;
+                animation-play-state: running;
+                animation-timing-function: ease-in-out;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
             }
         }
     </style>
@@ -221,10 +260,10 @@
         </div>
     </nav>
     <div id="phone-img" class="d-flex justify-content-center">
-        <img  src="./img/passport.jpeg" style="display: none;" alt="">
+        <img src="./img/passport.jpeg" style="display: none;" alt="">
     </div>
     <div class="top-section">
-        
+
         <div>
             <p class="heading" style="margin-bottom: 0;">
                 CURRICULUM VITAE of <br>
@@ -249,7 +288,7 @@
                 <h1 class="navy">Contact Info</h1>
             </div>
             <div class="logo tfont">
-    
+
                 <div>
                     <i class="lni lni-phone"></i> 01621179340
                     <br>
@@ -260,24 +299,25 @@
                 </div>
             </div>
         </div>
-        
-    
+
+
         <div id="career">
             <h1 class="navy">Career Qualifiacation
-    
+
             </h1><br>
-    
+
             <p class="tfont
-                    ">To obtain a position with opportunities to utilize my potentiality,adaptability & skill to do some
+                    ">To obtain a position with opportunities to utilize my potentiality,adaptability & skill to do
+                some
                 thing innovative and from where I will be able to anhance my Knowledge. </p>
         </div>
-    
-    
-    
-    
+
+
+
+
         <h1 class="navy" id="academic">Academic Qualifiacation</h1>
         <div id="rotate" style="display: none;" class="text-center">
-            <p class="pt-3"  >Rotate phone to view Academic Qualification</p>
+            <p class="pt-3">Rotate phone to view Academic Qualification</p>
             <img src="./img/rotate-smartphone.png" style="height: 30px;" alt="">
 
         </div>
@@ -346,51 +386,52 @@
                 </td>
             </tr>
         </table>
-    
+
         <div id="skill-div" style="width: 100%;">
             <h1 id="skills" class="navy">Skills</h1>
-        <ol class="tfont" type="a">
-            <li>Microsoft Excell</li>
-            <li>Microsoft Word</li>
-            <li>Powerpoint</li>
-            <li>Adobe Photoshop & Illustrutor</li>
-            <li>Other Basic Knowledge</li>
-        </ol>
+            <ol class="tfont" type="a">
+                <li>Microsoft Excell</li>
+                <li>Microsoft Word</li>
+                <li>Powerpoint</li>
+                <li>Adobe Photoshop & Illustrutor</li>
+                <li>Other Basic Knowledge</li>
+            </ol>
         </div>
-    
+
         <div style="width: 100%;">
             <h1 id="lang" class="navy">Language Skills</h1>
-        <ol class="tfont" type="a">
-            <li>English - Professional Working Proficiency</li>
-            <li>Bangla - Mother Tongue</li>
-        </ol>
+            <ol class="tfont" type="a">
+                <li>English - Professional Working Proficiency</li>
+                <li>Bangla - Mother Tongue</li>
+            </ol>
         </div>
-    
+
         <div style="width: 100%;">
             <h1 id="course" class="navy">Course</h1>
-        <ol class="tfont" type="a">
-            <li>Course in English</li>
-            <li>Participation on Adobe Photoshop & Adobe Illustrutor</li>
-        </ol>
+            <ol class="tfont" type="a">
+                <li>Course in English</li>
+                <li>Participation on Adobe Photoshop & Adobe Illustrutor</li>
+            </ol>
         </div>
-    
+
         <div style="width: 100%;">
             <h1 id="PD" class="navy">Personal Details</h1>
-        <ul class="tfont" type="a">
-            <li>Date of Birth : July 23, 1998</li>
-            <li>Nationality : Bangladeshi</li>
-            <li>NID : 5105191505</li>
-            <li>Blood Group : B+</li>
-            <li>Religion : Hindu</li>
-            <li>Parmanent Address : 27/3 Brahmanpara, Narsingdi
-            </li>
-        </ul>
+            <ul class="tfont" type="a">
+                <li>Date of Birth : July 23, 1998</li>
+                <li>Nationality : Bangladeshi</li>
+                <li>NID : 5105191505</li>
+                <li>Blood Group : B+</li>
+                <li>Religion : Hindu</li>
+                <li>Parmanent Address : 27/3 Brahmanpara, Narsingdi
+                </li>
+            </ul>
         </div>
-    
+
         <div style="width: 100%;">
             <h1 id="RF" class="navy">Reference</h1>
-        <p class="tfont"><span class="special">Engr. S.M.Akmal Hossain</span> <br> Principal <br>Aeronautical Institute of
-            Bangladesh <br><span class="special">cell :</span> 01742395177</p>
+            <p class="tfont"><span class="special">Engr. S.M.Akmal Hossain</span> <br> Principal <br>Aeronautical
+                Institute of
+                Bangladesh <br><span class="special">cell :</span> 01742395177</p>
         </div>
 
         <div style="margin-top: 40px;">
@@ -400,7 +441,7 @@
 
 
 
-    
+
 
     <footer class=" py-5" style="background-color: aliceblue; margin-top: 100px;">
         <p class="text-center" style="font-weight: 100;opacity: 70%;">&copy Rahul's Den || 2022 </p>
@@ -409,7 +450,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-        <script src="./js/app.js"></script>
+    <script src="./js/app.js"></script>
 
 </body>
 
