@@ -26,7 +26,7 @@
             0% {
                 transform: scale(1);
             }
-
+            
 
 
             100% {
@@ -36,6 +36,14 @@
 
             }
         }
+        @keyframes jumper {
+                0%{
+                    transform:translateY(-5px)
+                }
+                100%{
+                    transform: translateY(1px);
+                }
+            }
 
         body {
             /* padding-left: 40px;
@@ -154,12 +162,28 @@
             font-size: 1.1em;
             border-radius: 10px;
             padding: 10px 20px;
+
+            
         }
         #moon{
             /* display: inline-block; */
             transform: rotate(-20deg);
         }
+        .fa-cloud-arrow-down{
+            animation-name: jumper;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
         @media only screen and (max-width:600px) {
+            #img-wrapper{
+            position: absolute;
+            height: 261px;
+            width: 210px;
+            border-radius: 0 0 40% 40%;
+            z-index: -1;
+            top: 0;
+            background-color: navy;
+        }
             table {
                 display: none;
             }
@@ -217,7 +241,28 @@
                 animation-direction: alternate;
                 animation-iteration-count: infinite;
             }
+            #div-wrapper1{
+            background-color: rgba(211, 211, 211, 0.27);
+            /* border: 1px solid black; */
+            width: 370px;
+            height: 170px;
+            position: absolute;
+            left: -10px;
+            top: 900px;
+            z-index: -5;
         }
+        #div-wrapper2{
+            /* border: 1px solid black; */
+            background-color: rgba(211, 211, 211, 0.27);
+            width:370px ;
+            height: 220px;
+            position: absolute;
+            right: -10px;
+            top: 1217px;
+        }
+        
+        }
+        
     </style>
 </head>
 
@@ -263,8 +308,12 @@
             </div>
         </div>
     </nav>
+    
     <div id="phone-img" class="d-flex justify-content-center">
         <img src="./img/passport.jpeg" style="display: none;" alt="">
+        <div id="img-wrapper">
+            
+        </div>
     </div>
     <div class="top-section">
 
@@ -291,7 +340,7 @@
             <div class="ddd" id="contact-info">
                 <h1 class="navy">Contact Info</h1>
             </div>
-            <div class="logo tfont">
+            <div class="logo tfont" >
 
                 <div>
                     <i class="lni lni-phone"></i> 01621179340
@@ -300,6 +349,9 @@
                     <i class="lni lni-money-location"></i> Dhaka/Uttara sector11,Road 10B, House no 2 <br>
                     <i class="lni lni-facebook"></i> <a href="https://www.facebook.com/anindya.baul.Mrinmoy">Get in
                         Touch</a>
+                        <div id="div-wrapper1">
+
+                        </div>
                 </div>
             </div>
         </div>
@@ -314,6 +366,9 @@
                     ">To obtain a position with opportunities to utilize my potentiality,adaptability & skill to do
                 some
                 thing innovative and from where I will be able to anhance my Knowledge. </p>
+                <div id="div-wrapper2">
+
+                </div>
         </div>
 
 
@@ -439,7 +494,7 @@
         </div>
 
         <div style="margin-top: 40px;">
-            <button id="download">Download CV</button>
+            <button id="download"><i class="fa-solid fa-cloud-arrow-down"></i> Download CV</button>
         </div>
     </div>
 
