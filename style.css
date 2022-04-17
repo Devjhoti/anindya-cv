@@ -1,0 +1,288 @@
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    
+
+
+    100% {
+        transform: scale(1.2) translateX(10px);
+        color: navy;
+
+
+    }
+}
+@keyframes jumper {
+        0%{
+            transform:translateY(-5px)
+        }
+        100%{
+            transform: translateY(1px);
+        }
+    }
+@keyframes sweepRight {
+    0%{
+        transform: translateX(-1500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+body {
+    /* padding-left: 40px;
+    padding-right: 40px; */
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    height: 200px;
+}
+
+span {
+    font-weight: 200;
+}
+
+.daag {
+    border-left: 1px solid black;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+.chai {
+    background-color: rgba(128, 128, 128, 0.233);
+}
+
+.tfont {
+    font-size: 20px;
+}
+
+.navy {
+    color: navy;
+    border-bottom: 2px dashed navy;
+    display: inline-block;
+}
+
+table {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#academic {
+    margin-top: 60px;
+}
+
+ol {
+    padding-left: 100px;
+}
+
+ul {
+    padding-left: 100px;
+}
+
+.special {
+    color: navy;
+    font-weight: 600;
+}
+
+#career {
+    border-top: 2px dashed lightblue;
+    border-bottom: 2px dashed lightblue;
+
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    border-top: 2px dashed lightblue;
+    margin-top: 40px;
+}
+
+.ddd {
+    border-right: 2px solid navy;
+    padding: 50px;
+    margin-top: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    padding-left: 50px;
+}
+
+.top-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.heading {
+    font-size: 50px;
+    /* margin-right: 400px; */
+}
+
+.name {
+    color: rgb(75, 191, 230);
+    font-weight: 500;
+    line-height: 60px;
+    position: relative;
+    font-family: 'Source Code Pro', monospace;
+}
+.name::before,
+.name::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.name::before{
+    background-color: #ffffff;
+    border-left: 2px solid cyan;
+    height: 50px;
+    animation: typeWritter 3s steps(19) 1200ms forwards;
+}
+.name::after{
+    width: 0.125em;
+    background: #4DC0E6;
+    height: 50px;
+    animation: 
+    typeWritter 3s steps(19) 1200ms forwards,
+    blink 550ms steps(19) infinite;
+
+}
+@keyframes typeWritter {
+    to{
+        left: 100%;
+    }
+}
+@keyframes blink {
+    to{
+        background-color: transparent;
+    }
+}
+#download {
+
+    background-color: navy;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 10px;
+    padding: 10px 20px;
+
+    
+}
+.animate-top{
+    animation: sweepRight 1000ms ease-in-out ;
+}
+#moon{
+    /* display: inline-block; */
+    transform: rotate(-20deg);
+}
+.fa-cloud-arrow-down{
+    animation-name: jumper;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@media only screen and (max-width:600px) {
+    #img-wrapper{
+    position: absolute;
+    height: 261px;
+    width: 210px;
+    border-radius: 0 0 40% 40%;
+    z-index: -1;
+    top: 0;
+    background-color: navy;
+}
+    table {
+        display: none;
+    }
+
+    #img-pp {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 0;
+    }
+
+    #contact-info {
+        padding-right: 0;
+        border: 0;
+    }
+
+    .cont {
+        flex-direction: column;
+    }
+
+    .top-section {
+        text-align: center;
+        width: 80%;
+        margin-left: auto;
+    }
+
+    #phone-img {
+        margin-top: 10px;
+
+    }
+
+    #phone-img img {
+        display: block !important;
+        border-radius: 50%;
+    }
+
+    /* #academic{
+        display: none !important;
+    } */
+    #skill-div {
+        padding-top: 25px;
+    }
+
+    #rotate {
+        display: block !important;
+    }
+
+    .name {
+        display: block;
+        animation-name: bounce;
+        animation-duration: 2000ms;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        font-size: 25px;
+    }
+    .name::after{
+        /* animation-play-state: paused; */
+    }
+    #div-wrapper1{
+    background-color: rgba(211, 211, 211, 0.27);
+    /* border: 1px solid black; */
+    width: 370px;
+    height: 170px;
+    position: absolute;
+    left: -10px;
+    top: 900px;
+    z-index: -5;
+}
+#div-wrapper2{
+    /* border: 1px solid black; */
+    background-color: rgba(211, 211, 211, 0.27);
+    width:370px ;
+    height: 220px;
+    position: absolute;
+    right: -10px;
+    top: 1217px;
+}
+
+}
